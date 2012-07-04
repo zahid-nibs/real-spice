@@ -1,0 +1,49 @@
+body {
+  position: relative;
+  width: 100%;
+  background: #222222;
+  font-family: $sansFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $text_color;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Common
+---------------------------------------- */
+div {
+  display: block;
+}
+.full_width {
+  width: 100%;
+}
+.width_950 {
+  width: 950px;
+  margin: 0 auto;
+}
+.width_980 {
+  width: 980px;
+  margin: 0 auto;
+}
+
+ul.hoz {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    display:  inline-block;
+    @include ie7-inline-block();
+  }
+}
+// Links
+// -----
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+}
+a:hover {
+  color: $linkColorHover;
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+@mixin grid-span($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
+  width: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1));
+  *width: ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1)) - (.5 / $gridRowWidth * 100px * 1%);
+}
+
+@mixin grid($fluidGridColumnWidth, $fluidGridGutterWidth) {
+  .container{
+    padding-right: $gridGutterWidth;
+    padding-left: $gridGutterWidth;
+    @include clearfix();
+  }
+  .row {
+    width: 100%;
+    @include clearfix();
+    [class*="span"] {
+      display: block;
+      width: 100%;
+      min-height: 28px;
+      @include exp-prop(box-sizing,border-box);
+      float: left;
+      margin-left: $fluidGridGutterWidth;
+      *margin-left: $fluidGridGutterWidth - (.5 / $gridRowWidth * 100px * 1%);
+    }
+    [class*="span"]:first-child {
+      margin-left: 0;
+    }
+
+    // generate .spanX
+    $i: $gridColumns;
+    @while $i > 0 {
+      .span#{$i} {
+        @include grid-span($i, $fluidGridColumnWidth, $fluidGridGutterWidth);
+      }
+      $i: $i - 1;
+    }
+  }
+}
+
+@include grid($fluidGridColumnWidth, $fluidGridGutterWidth);

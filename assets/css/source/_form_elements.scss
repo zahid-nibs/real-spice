@@ -1,0 +1,116 @@
+@mixin _button($text-color,$color1,$color2,$font-size:$baseFontSize){
+  position:relative;
+  display: inline-block;
+  @include ie7-inline-block();
+  outline: none;
+  width: auto;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size-adjust:0.52;
+  font-size:$font-size;
+  line-height: $baseLineHeight;
+  *line-height: 20px;
+  font-weight:bold;
+  font-family:inherit;
+  padding: 0.5em 2.5em;
+  border:1px solid darken($color1,5%);
+  color:$text-color;
+  text-shadow:0px 1px 0px transparentize(#000,0.6);
+  @include lin-grad($color1,$color2);
+  @include ie7-restore-left-whitespace();
+  @include border-radius(3em);
+  @include box-shadow(( 0px 0px 0.1em transparentize(#000,0.3),inset 0px 0.1em 0.2em transparentize(#fff,0.3)));
+  @include behaviour();
+  &:hover,&:focus{
+    @include lin-grad($color2,$color1);
+    @include behaviour();
+  }
+  &:active{
+    @include box-shadow(( 0px 0px 0.1em transparentize(#000,0.3),inset 0px 0.1em 0.5em transparentize(#000,0.5)));
+    @include behaviour();
+  }
+  &:disabled,&.disabled{
+    cursor: default;
+    color:#333;
+    @include lin-grad(#c6c6c6,#e6e6e6);
+    border:1px solid #e3e3e3;
+    @include opacity(65);
+    @include box-shadow(none);
+    @include behaviour();
+  }
+}
+/*-------------------------------------------------------*/
+/* BUTTONS */
+button.button::-moz-focus-inner{
+	border: 0;  /* overrides extra padding in Firefox */
+	padding:0;
+}
+button.button, a.button{
+  img{
+    display: inline;
+    vertical-align: middle;
+    margin: -0.1em 0.4em 0 -1.3em;
+    max-width:none !important;
+    border:none;
+  }
+  // IE7 has some default padding on button controls
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+  @include _button(#fff,#1eb2e4,#33ccff);
+  &.primary{
+    @include _button(#fff,#439f05,#85d10d);
+  }
+  &.danger{
+    @include _button(#fff,#bd362f,#ee5f5b);
+  }
+}
+
+/* INPUT & TEXTAREA */
+
+input.text,
+input.email,
+input.password,
+textarea.uniform {
+  font-size: $baseFontSize;
+  font-family:$baseFontFamily;
+  min-height:26px;
+  line-height:1.8em;
+  padding: 2px;
+  color: #333;
+  border: solid 1px #ccc;
+  @include border-radius(0.3em);
+  outline: 0;
+
+  &:focus{
+    border: solid 1px #666;
+  }
+  &.error_lv,&.error{
+    border:2px solid #cc3300 !important;
+  }
+}
+textarea.uniform{
+  height:auto;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 3px 0;
+  *margin-top: 0; /* IE7 */
+  line-height: normal;
+  cursor: pointer;
+}
+
+// Reset width of input buttons, radios, checkboxes
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto; // Override of generic input selector
+}
+
+
+@import "_uniform";
+@import "_forms";

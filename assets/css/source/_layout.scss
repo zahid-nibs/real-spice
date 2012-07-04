@@ -1,0 +1,63 @@
+#mainContainer{
+  font-size:$baseFontSize;
+}
+
+/** top menu */
+#mainHeader *,
+#mainBanner *,
+#contentOuter * { border: 1px solid #fff; }
+
+#mainHeader {
+  #mainHeaderInner {
+    #topMenu {
+      float: left;
+      
+      & ul {
+        & li {
+          & a {
+            color: $white;
+            min-width: 50px;
+            padding: 0.8em 1.3em;
+            text-align: center;
+            text-decoration: none;
+            
+            &#logo {
+              padding: 0 !important;
+            }
+            &:link, 
+            &:visited {
+              display: block;
+            }
+          }
+          &:hover, &.active {}
+          &.first {}
+          &.last {}
+        }      
+      }
+    }
+  }
+}
+
+/** banner */
+#mainBanner {
+  padding:2.5em 0;
+  #mainBannerInner{
+    #banner{
+      .powered{
+        position: relative;
+        top: 5.6em;
+      }
+    }
+  }
+}
+
+
+/** content */
+#contentOuter {
+  padding:2.5em 0;
+}
+
+/** footer */
+#footerOuter{
+
+}

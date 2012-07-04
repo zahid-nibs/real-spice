@@ -1,0 +1,124 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  color: $main_green;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+}
+h1{
+  color:$main_green;
+  font-size:30px;
+  line-height: $baseLineHeight * 2;
+  &.underlined{
+    border-bottom:1px solid $main_green;
+    margin-bottom:$baseLineHeight/2;
+  }
+}
+h2{
+  font-size: 24px;
+  line-height: $baseLineHeight * 1.5;
+}
+h3{
+  font-size: 18px;
+  line-height: $baseLineHeight * 1.5;
+}
+h4{
+  font-size:14px;
+  line-height: $baseLineHeight;
+}
+h5{
+  color:$text_color;
+  font-size:15px;
+  font-style:italic;
+  font-family:$serifFontFamily;
+}
+p{
+  margin: 0 0 $baseLineHeight / 2;
+  small {
+    font-size: $baseFontSize - 2;
+  }
+}
+// LISTS
+// -----
+
+// Unordered and Ordered lists
+ul, ol {
+  padding: 0;
+  margin: 0 0 $baseLineHeight / 2 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+li {
+  line-height: $baseLineHeight;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+// Description Lists
+dl {
+  margin-bottom: $baseLineHeight;
+}
+dt,
+dd {
+  line-height: $baseLineHeight;
+}
+dt {
+  font-weight: bold;
+  line-height: $baseLineHeight - 1; // fix jank Helvetica Neue font bug
+}
+dd {
+  margin-left: $baseLineHeight / 2;
+}
+// Horizontal layout (like forms)
+.dl-horizontal {
+  dt {
+    float: left;
+    width: 120px;
+    clear: left;
+    text-align: right;
+    @include text-overflow();
+  }
+  dd {
+    margin-left: 130px;
+  }
+}
+hr{
+  margin: $baseLineHeight 0;
+  border:none;
+  overflow:hidden;
+  border-bottom: 1px solid $main-green;
+  height: 1px;
+}
+blockquote {
+  padding: 0;
+  margin: 0 0 $baseLineHeight;
+  p {
+    margin-bottom: 0;
+    font-size:$baseFontSize+3;
+    font-style:italic;
+    color:lighten($text_color,5%);
+    &:before {
+      content: '\201C';
+      font-size:3em;
+      float:left;
+      margin-right:5px;
+      margin-top:5px;
+    }
+  }
+  small {
+    display: block;
+    text-align:right;
+  }
+}

@@ -1,0 +1,83 @@
+div.tagline{
+  border-bottom: 1px solid $main-green;
+  font-style:italic;
+  font-size:$baseFontSize + 6;
+  padding-bottom:$baseLineHeight / 2;
+  font-family:$serifFontFamily;
+  margin-bottom: 20px;
+  p{
+    margin:0;
+  }
+}
+fieldset,.well{
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  @include border-radius(4px);
+  border: 1px solid lighten($text_color,30%);
+  background: lighten($text_color,37%);
+  color: darken($text_color,10%);
+  &.active,&.green{
+    border: 1px solid $main_green;
+    background: lighten($main_green,42%);
+  }
+}
+
+// ALERT STYLES
+// ------------
+
+// Base alert styles
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: $baseLineHeight;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: $warningBackground;
+  border: 1px solid $warningBorder;
+  @include border-radius(4px);
+  color: $warningText;
+}
+.alert-heading {
+  color: inherit;
+}
+
+// Adjust close link position
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+// Alternate styles
+// ----------------
+
+.alert-success {
+  background-color: $successBackground;
+  border-color: $successBorder;
+  color: $successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: $errorBackground;
+  border-color: $errorBorder;
+  color: $errorText;
+}
+.alert-info {
+  background-color: $infoBackground;
+  border-color: $infoBorder;
+  color: $infoText;
+}
+
+// Block alerts
+// ------------------------
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}

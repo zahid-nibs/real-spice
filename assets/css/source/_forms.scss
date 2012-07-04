@@ -1,0 +1,156 @@
+form {
+  margin: 0 0 $baseLineHeight;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $baseLineHeight * 1.5;
+  font-size: $baseFontSize * 1.5;
+  line-height: $baseLineHeight * 2;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  small {
+    font-size: $baseLineHeight * .75;
+  }
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.checkbox {
+  min-height: 31px; // clear the floating input if there is no label text
+  //padding-left: 18px;
+  input[type="radio"],input[type="checkbox"]{
+    float: left;
+    margin-left: -18px;
+  }
+  display:block;
+}
+// Move the options list down to align with labels
+.controls > .checkbox:first-child {
+  padding-top: 5px; // has to be padding because margin collaspes
+}
+
+.checkbox.inline {
+  display: inline-block;
+  padding-top: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.checkbox.inline + .checkbox.inline {
+  margin-left: 10px; // space out consecutive inline controls
+}
+
+
+// General classes for quick sizes
+.input-mini       { width: 60px; }
+.input-small      { width: 90px; }
+.input-medium     { width: 150px; }
+.input-large      { width: 210px; }
+.input-xlarge     { width: 270px; }
+.input-xxlarge    { width: 530px; }
+
+.row input[class*="span"],
+.row select[class*="span"],
+.row textarea[class*="span"]{
+  float: none;
+  margin-left: 0;
+}
+
+.input-append input[class*="span"],
+.input-append .uneditable-input[class*="span"],
+.input-prepend input[class*="span"],
+.input-prepend .uneditable-input[class*="span"],
+.row-fluid .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"] {
+  display: inline-block;
+}
+
+// HELP TEXT
+// ---------
+
+.help.block,
+.help {
+  //color: $dimGray;
+}
+
+.help.block {
+  display: block; // account for any element using help-block
+  margin-bottom: $baseLineHeight / 2;
+}
+
+.help{
+  display: inline-block;
+  @include ie7-inline-block();
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+// Form Control Groups
+// -------------------
+.control-group {
+  margin-bottom: $baseLineHeight / 2;
+}
+legend + .control-group {
+  margin-top: $baseLineHeight;
+  -webkit-margin-top-collapse: separate;
+}
+
+.form-horizontal {
+  // Increase spacing between groups
+  .control-group {
+    margin-bottom: $baseLineHeight;
+    @include clearfix();
+  }
+  // Float the labels left
+  .control-label {
+    float: left;
+    width: 140px;
+    padding-top: 5px;
+    text-align: right;
+  }
+  // Move over all input controls and content
+  .controls {
+    // Super jank IE7 fix to ensure the inputs in .input-append and input-prepend
+    // don't inherit the margin of the parent, in this case .controls
+    *display: inline-block;
+    *padding-left: 20px;
+    margin-left: 160px;
+    *margin-left: 0;
+    &:first-child {
+      *padding-left: 160px;
+    }
+  }
+  // Remove bottom margin on block level help text since that's accounted for on .control-group
+  .help.block {
+    margin-top: $baseLineHeight / 2;
+    margin-bottom: 0;
+  }
+  // Move over buttons in .form-actions to align with .controls
+  .form-actions {
+    padding-left: 160px;
+  }
+}
+
+// FORM FIELD FEEDBACK STATES
+// --------------------------
+
+// Warning
+.control-group.warning {
+  @include formFieldState($warningText, $warningText, $warningBackground);
+}
+// Error
+.control-group.error {
+  @include formFieldState($errorText, $errorText, $errorBackground);
+}
+// Success
+.control-group.success {
+  @include formFieldState($successText, $successText, $successBackground);
+}

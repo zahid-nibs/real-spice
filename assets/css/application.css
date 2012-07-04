@@ -1,0 +1,1806 @@
+/* line 7, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* line 18, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 24, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 27, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 30, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 39, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+/* line 45, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+/* line 50, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 57, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 61, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+input[type="search"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+/* line 66, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 69, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 73, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+.clearit {
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  clear: both;
+}
+
+/* line 79, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 61, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+/* line 65, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 7, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+/* line 61, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.container:before, .container:after {
+  display: table;
+  content: "";
+}
+/* line 65, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 12, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 61, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.row:before, .row:after {
+  display: table;
+  content: "";
+}
+/* line 65, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.row:after {
+  clear: both;
+}
+/* line 15, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row [class*="span"] {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 2.128%;
+  *margin-left: 2.074%;
+}
+/* line 24, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row [class*="span"]:first-child {
+  margin-left: 0;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span12 {
+  width: 100.0%;
+  *width: 99.947%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span11 {
+  width: 91.489%;
+  *width: 91.436%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span10 {
+  width: 82.979%;
+  *width: 82.926%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span9 {
+  width: 74.468%;
+  *width: 74.415%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span8 {
+  width: 65.957%;
+  *width: 65.904%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span7 {
+  width: 57.447%;
+  *width: 57.394%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span6 {
+  width: 48.936%;
+  *width: 48.883%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span5 {
+  width: 40.426%;
+  *width: 40.372%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span4 {
+  width: 31.915%;
+  *width: 31.862%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span3 {
+  width: 23.404%;
+  *width: 23.351%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span2 {
+  width: 14.894%;
+  *width: 14.84%;
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_grid.scss */
+.row .span1 {
+  width: 6.383%;
+  *width: 6.33%;
+}
+
+/* line 1, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+body {
+  position: relative;
+  width: 100%;
+  background: #222222;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #999999;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Common
+---------------------------------------- */
+/* line 15, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+div {
+  display: block;
+}
+
+/* line 18, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+.full_width {
+  width: 100%;
+}
+
+/* line 21, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+.width_950 {
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* line 25, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+.width_980 {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 30, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+ul.hoz {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 34, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+ul.hoz li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 42, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+a {
+  color: #99cc33;
+  text-decoration: none;
+}
+
+/* line 46, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_scaffolding.scss */
+a:hover {
+  color: #6b8f24;
+  text-decoration: underline;
+}
+
+/* line 1, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  color: #99cc33;
+  text-rendering: optimizelegibility;
+}
+
+/* line 7, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+h1 {
+  color: #99cc33;
+  font-size: 30px;
+  line-height: 36px;
+}
+/* line 11, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+h1.underlined {
+  border-bottom: 1px solid #99cc33;
+  margin-bottom: 9px;
+}
+
+/* line 16, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+h2 {
+  font-size: 24px;
+  line-height: 27px;
+}
+
+/* line 20, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+h3 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* line 24, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 28, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+h5 {
+  color: #999999;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* line 34, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+p {
+  margin: 0 0 9px;
+}
+/* line 36, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+p small {
+  font-size: 11px;
+}
+
+/* line 44, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+ul, ol {
+  padding: 0;
+  margin: 0 0 9px 25px;
+}
+
+/* line 51, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+/* line 54, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 57, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 60, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+li {
+  line-height: 18px;
+}
+
+/* line 64, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* line 70, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+dl {
+  margin-bottom: 18px;
+}
+
+/* line 74, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+dt,
+dd {
+  line-height: 18px;
+}
+
+/* line 77, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+dt {
+  font-weight: bold;
+  line-height: 17px;
+}
+
+/* line 81, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+dd {
+  margin-left: 9px;
+}
+
+/* line 86, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+.dl-horizontal dt {
+  float: left;
+  width: 120px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 93, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+
+/* line 97, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+hr {
+  margin: 18px 0;
+  border: none;
+  overflow: hidden;
+  border-bottom: 1px solid #99cc33;
+  height: 1px;
+}
+
+/* line 104, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+blockquote {
+  padding: 0;
+  margin: 0 0 18px;
+}
+/* line 107, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-style: italic;
+  color: #a6a6a6;
+}
+/* line 112, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+blockquote p:before {
+  content: '\201C';
+  font-size: 3em;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+/* line 120, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_typography.scss */
+blockquote small {
+  display: block;
+  text-align: right;
+}
+
+/*-------------------------------------------------------*/
+/* BUTTONS */
+/* line 47, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button::-moz-focus-inner {
+  border: 0;
+  /* overrides extra padding in Firefox */
+  padding: 0;
+}
+
+/* line 51, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button, a.button {
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  outline: none;
+  width: auto;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size-adjust: 0.52;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 0.5em 2.5em;
+  border: 1px solid #19a1d0;
+  color: white;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+  background: #1eb2e4;
+  background: -moz-linear-gradient(#1eb2e4, #33ccff);
+  background: -webkit-linear-gradient(#1eb2e4, #33ccff);
+  background: -ms-linear-gradient(#1eb2e4, #33ccff);
+  background: -o-linear-gradient(#1eb2e4, #33ccff);
+  background: linear-gradient(#1eb2e4, #33ccff);
+  -pie-background: linear-gradient(#1eb2e4, #33ccff);
+  *margin-left: .3em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  border-radius: 3em;
+  -moz-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -ms-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -o-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 52, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button img, a.button img {
+  display: inline;
+  vertical-align: middle;
+  margin: -0.1em 0.4em 0 -1.3em;
+  max-width: none !important;
+  border: none;
+}
+/* line 37, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+button.button:first-child, a.button:first-child {
+  *margin-left: 0;
+}
+/* line 27, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button:hover, button.button:focus, a.button:hover, a.button:focus {
+  background: #33ccff;
+  background: -moz-linear-gradient(#33ccff, #1eb2e4);
+  background: -webkit-linear-gradient(#33ccff, #1eb2e4);
+  background: -ms-linear-gradient(#33ccff, #1eb2e4);
+  background: -o-linear-gradient(#33ccff, #1eb2e4);
+  background: linear-gradient(#33ccff, #1eb2e4);
+  -pie-background: linear-gradient(#33ccff, #1eb2e4);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button:active, a.button:active {
+  -moz-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 35, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button:disabled, button.button.disabled, a.button:disabled, a.button.disabled {
+  cursor: default;
+  color: #333;
+  background: #c6c6c6;
+  background: -moz-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -webkit-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -ms-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -o-linear-gradient(#c6c6c6, #e6e6e6);
+  background: linear-gradient(#c6c6c6, #e6e6e6);
+  -pie-background: linear-gradient(#c6c6c6, #e6e6e6);
+  border: 1px solid #e3e3e3;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 63, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.primary, a.button.primary {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  outline: none;
+  width: auto;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size-adjust: 0.52;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 0.5em 2.5em;
+  border: 1px solid #398604;
+  color: white;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+  background: #439f05;
+  background: -moz-linear-gradient(#439f05, #85d10d);
+  background: -webkit-linear-gradient(#439f05, #85d10d);
+  background: -ms-linear-gradient(#439f05, #85d10d);
+  background: -o-linear-gradient(#439f05, #85d10d);
+  background: linear-gradient(#439f05, #85d10d);
+  -pie-background: linear-gradient(#439f05, #85d10d);
+  *margin-left: .3em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  border-radius: 3em;
+  -moz-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -ms-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -o-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 37, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+button.button.primary:first-child, a.button.primary:first-child {
+  *margin-left: 0;
+}
+/* line 27, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.primary:hover, button.button.primary:focus, a.button.primary:hover, a.button.primary:focus {
+  background: #85d10d;
+  background: -moz-linear-gradient(#85d10d, #439f05);
+  background: -webkit-linear-gradient(#85d10d, #439f05);
+  background: -ms-linear-gradient(#85d10d, #439f05);
+  background: -o-linear-gradient(#85d10d, #439f05);
+  background: linear-gradient(#85d10d, #439f05);
+  -pie-background: linear-gradient(#85d10d, #439f05);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.primary:active, a.button.primary:active {
+  -moz-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 35, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.primary:disabled, button.button.primary.disabled, a.button.primary:disabled, a.button.primary.disabled {
+  cursor: default;
+  color: #333;
+  background: #c6c6c6;
+  background: -moz-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -webkit-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -ms-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -o-linear-gradient(#c6c6c6, #e6e6e6);
+  background: linear-gradient(#c6c6c6, #e6e6e6);
+  -pie-background: linear-gradient(#c6c6c6, #e6e6e6);
+  border: 1px solid #e3e3e3;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 66, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.danger, a.button.danger {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  outline: none;
+  width: auto;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size-adjust: 0.52;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 0.5em 2.5em;
+  border: 1px solid #a9302a;
+  color: white;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+  background: #bd362f;
+  background: -moz-linear-gradient(#bd362f, #ee5f5b);
+  background: -webkit-linear-gradient(#bd362f, #ee5f5b);
+  background: -ms-linear-gradient(#bd362f, #ee5f5b);
+  background: -o-linear-gradient(#bd362f, #ee5f5b);
+  background: linear-gradient(#bd362f, #ee5f5b);
+  -pie-background: linear-gradient(#bd362f, #ee5f5b);
+  *margin-left: .3em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  border-radius: 3em;
+  -moz-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -ms-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  -o-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.2em rgba(255, 255, 255, 0.7);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 37, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+button.button.danger:first-child, a.button.danger:first-child {
+  *margin-left: 0;
+}
+/* line 27, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.danger:hover, button.button.danger:focus, a.button.danger:hover, a.button.danger:focus {
+  background: #ee5f5b;
+  background: -moz-linear-gradient(#ee5f5b, #bd362f);
+  background: -webkit-linear-gradient(#ee5f5b, #bd362f);
+  background: -ms-linear-gradient(#ee5f5b, #bd362f);
+  background: -o-linear-gradient(#ee5f5b, #bd362f);
+  background: linear-gradient(#ee5f5b, #bd362f);
+  -pie-background: linear-gradient(#ee5f5b, #bd362f);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 31, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.danger:active, a.button.danger:active {
+  -moz-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0.1em rgba(0, 0, 0, 0.7), inset 0px 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+/* line 35, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+button.button.danger:disabled, button.button.danger.disabled, a.button.danger:disabled, a.button.danger.disabled {
+  cursor: default;
+  color: #333;
+  background: #c6c6c6;
+  background: -moz-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -webkit-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -ms-linear-gradient(#c6c6c6, #e6e6e6);
+  background: -o-linear-gradient(#c6c6c6, #e6e6e6);
+  background: linear-gradient(#c6c6c6, #e6e6e6);
+  -pie-background: linear-gradient(#c6c6c6, #e6e6e6);
+  border: 1px solid #e3e3e3;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+
+/* INPUT & TEXTAREA */
+/* line 76, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+input.text,
+input.email,
+input.password,
+textarea.uniform {
+  font-size: 13px;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  min-height: 26px;
+  line-height: 1.8em;
+  padding: 2px;
+  color: #333;
+  border: solid 1px #ccc;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  outline: 0;
+}
+/* line 87, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+input.text:focus,
+input.email:focus,
+input.password:focus,
+textarea.uniform:focus {
+  border: solid 1px #666;
+}
+/* line 90, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+input.text.error_lv, input.text.error,
+input.email.error_lv,
+input.email.error,
+input.password.error_lv,
+input.password.error,
+textarea.uniform.error_lv,
+textarea.uniform.error {
+  border: 2px solid #cc3300 !important;
+}
+
+/* line 94, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+textarea.uniform {
+  height: auto;
+}
+
+/* line 98, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 3px 0;
+  *margin-top: 0;
+  /* IE7 */
+  line-height: normal;
+  cursor: pointer;
+}
+
+/* line 110, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_form_elements.scss */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+/* Global Declaration */
+/* line 10, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector,
+div.selector span,
+div.checker span,
+div.radio span,
+div.uploader,
+div.uploader span.action,
+div.button,
+div.button span {
+  background-image: url(../images/sprite2.png);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 25, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+.selector,
+.radio,
+.checker,
+.uploader,
+.button,
+.selector *,
+.radio *,
+.checker *,
+.uploader *,
+.button * {
+  margin: 0;
+  padding: 0;
+}
+
+/* SPRITES */
+/* Select */
+/* line 34, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector {
+  background-position: -483px -32px;
+  line-height: 31px;
+  height: 31px;
+}
+
+/* line 40, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector span {
+  background-position: right 0px;
+  height: 31px;
+  line-height: 31px;
+}
+
+/* line 46, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector select {
+  /* change these to adjust positioning of select element */
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+/* line 59, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector:active,
+div.selector.active,
+div.selector.focus, div.selector.hover, div.selector:hover,
+div.selector.focus:active,
+div.selector.focus.active,
+div.selector:hover:active,
+div.selector.active:hover {
+  background-position: -483px -159px;
+}
+
+/* line 69, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector:active span,
+div.selector.active span,
+div.selector.focus span, div.selector.hover span, div.selector:hover span,
+div.selector.focus:active span,
+div.selector:hover:active span,
+div.selector.active:hover span,
+div.selector.focus.active span {
+  background-position: right -127px;
+}
+
+/* line 73, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector.disabled {
+  background-position: -483px -96px;
+}
+
+/* line 77, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector.disabled span {
+  background-position: right -64px;
+}
+
+/* Checkbox */
+/* line 83, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker {
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1;
+  width: 31px;
+  height: 31px;
+}
+
+/* line 91, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker input {
+  width: 31px;
+  height: 31px;
+}
+
+/* line 96, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker span {
+  background-position: 0px -218px;
+  height: 31px;
+  width: 31px;
+}
+
+/* line 109, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker:active span,
+div.checker.active span,
+div.checker.focus span,
+div.checker:hover span,
+div.checker.focus:active span,
+div.checker:active:hover span,
+div.checker.active:hover span,
+div.checker.focus.active span {
+  background-position: -68px -218px;
+}
+
+/* line 113, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker span.checked {
+  background-position: -34px -218px;
+}
+
+/* line 124, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker:active span.checked,
+div.checker.active span.checked,
+div.checker.focus span.checked,
+div.checker:hover span.checked,
+div.checker.focus:active span.checked,
+div.checker:hover:active span.checked,
+div.checker.active:hover span.checked,
+div.checker.active.focus span.checked {
+  background-position: -102px -218px;
+}
+
+/* line 130, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker.disabled span,
+div.checker.disabled:active span,
+div.checker.disabled.active span {
+  background-position: -136px -218px;
+}
+
+/* line 136, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker.disabled span.checked,
+div.checker.disabled:active span.checked,
+div.checker.disabled.active span.checked {
+  background-position: -169px -218px;
+}
+
+/* Radio */
+/* line 142, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio {
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1;
+  width: 31px;
+  height: 31px;
+}
+
+/* line 150, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio input {
+  width: 31px;
+  height: 31px;
+}
+
+/* line 155, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio span {
+  height: 31px;
+  width: 31px;
+  background-position: 0px -218px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 170, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio:active span,
+div.radio.active span,
+div.radio.focus span,
+div.radio:hover span,
+div.radio.focus:active span,
+div.radio:active:hover span,
+div.radio.active:hover span,
+div.radio.active.focus span {
+  background-position: -68px -218px;
+}
+
+/* line 173, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio span.checked {
+  background-position: -34px -218px;
+}
+
+/* line 182, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio:active span.checked,
+div.radio.active span.checked,
+div.radio.focus span.checked, div.radio:hover span.checked,
+div.radio.focus:active span.checked,
+div.radio:hover:active span.checked,
+div.radio.focus.active span.checked,
+div.radio.active:hover span.checked {
+  background-position: -102px -218px;
+}
+
+/* line 188, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio.disabled span,
+div.radio.disabled:active span,
+div.radio.disabled.active span {
+  background-position: -136px -218px;
+}
+
+/* line 194, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio.disabled span.checked,
+div.radio.disabled:active span.checked,
+div.radio.disabled.active span.checked {
+  background-position: -169px -218px;
+}
+
+/* Uploader */
+/* line 200, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader {
+  background-position: 0px -297px;
+  height: 28px;
+}
+
+/* line 205, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader span.action {
+  background-position: right -409px;
+  height: 24px;
+  line-height: 24px;
+}
+
+/* line 211, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader span.filename {
+  height: 24px;
+  /* change this line to adjust positioning of filename area */
+  margin: 2px 0px 2px 2px;
+  line-height: 24px;
+}
+
+/* line 220, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.focus,
+div.uploader.hover,
+div.uploader:hover {
+  background-position: 0px -353px;
+}
+
+/* line 226, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.focus span.action,
+div.uploader.hover span.action,
+div.uploader:hover span.action {
+  background-position: right -437px;
+}
+
+/* line 231, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.active span.action,
+div.uploader:active span.action {
+  background-position: right -465px;
+}
+
+/* line 238, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.focus.active span.action,
+div.uploader:focus.active span.action,
+div.uploader.focus:active span.action,
+div.uploader:focus:active span.action {
+  background-position: right -493px;
+}
+
+/* line 242, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.disabled {
+  background-position: 0px -325px;
+}
+
+/* line 246, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.disabled span.action {
+  background-position: right -381px;
+}
+
+/* line 250, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button {
+  background-position: 0px -523px;
+}
+
+/* line 254, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button span {
+  background-position: right -643px;
+}
+
+/* line 261, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button.focus,
+div.button:focus,
+div.button:hover,
+div.button.hover {
+  background-position: 0px -553px;
+}
+
+/* line 268, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button.focus span,
+div.button:focus span,
+div.button:hover span,
+div.button.hover span {
+  background-position: right -673px;
+}
+
+/* line 273, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button.active,
+div.button:active {
+  background-position: 0px -583px;
+}
+
+/* line 278, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button.active span,
+div.button:active span {
+  background-position: right -703px;
+  color: #555;
+}
+
+/* line 284, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button.disabled,
+div.button:disabled {
+  background-position: 0px -613px;
+}
+
+/* line 289, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button.disabled span,
+div.button:disabled span {
+  background-position: right -733px;
+  color: #bbb;
+  cursor: default;
+}
+
+/* PRESENTATION */
+/* Button */
+/* line 299, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button {
+  height: 30px;
+}
+
+/* line 303, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button span {
+  margin-left: 13px;
+  height: 22px;
+  padding-top: 8px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 2px;
+  padding-right: 15px;
+}
+
+/* Select */
+/* line 317, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector {
+  width: 190px;
+  font-size: 12px;
+}
+
+/* line 322, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector select {
+  min-width: 190px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border: solid 1px #fff;
+}
+
+/* line 329, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector span {
+  padding: 0px 25px 0px 2px;
+  cursor: pointer;
+}
+
+/* line 334, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector span {
+  color: #666;
+  width: 158px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/* line 340, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector.disabled span {
+  color: #bbb;
+}
+
+/* Checker */
+/* line 345, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker {
+  margin-right: 5px;
+}
+
+/* Radio */
+/* line 350, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio {
+  margin-right: 3px;
+}
+
+/* Uploader */
+/* line 355, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader {
+  width: 190px;
+  cursor: pointer;
+}
+
+/* line 360, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader span.action {
+  width: 85px;
+  text-align: center;
+  text-shadow: #fff 0px 1px 0px;
+  background-color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* line 369, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader span.filename {
+  color: #777;
+  width: 82px;
+  border-right: solid 1px #bbb;
+  font-size: 11px;
+}
+
+/* line 376, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader input {
+  width: 190px;
+}
+
+/* line 380, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.disabled span.action {
+  color: #aaa;
+}
+
+/* line 384, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader.disabled span.filename {
+  border-color: #ddd;
+  color: #aaa;
+}
+
+/*
+
+CORE FUNCTIONALITY
+
+Not advised to edit stuff below this line
+-----------------------------------------------------
+*/
+/* line 400, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+.selector,
+.checker,
+.button,
+.radio,
+.uploader {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 407, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+.selector select:focus, .radio input:focus, .checker input:focus, .uploader input:focus {
+  outline: 0;
+}
+
+/* Button */
+/* line 415, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button a,
+div.button button,
+div.button input {
+  position: absolute;
+}
+
+/* line 419, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button {
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 424, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.button span {
+  display: -moz-inline-box;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Select */
+/* line 433, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector {
+  position: relative;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+/* line 439, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 446, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.selector select {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  height: 25px;
+  border: none;
+  background: none;
+}
+
+/* Checker */
+/* line 457, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker {
+  position: relative;
+}
+
+/* line 461, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker span {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: center;
+}
+
+/* line 468, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.checker input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: none;
+}
+
+/* Radio */
+/* line 478, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio {
+  position: relative;
+}
+
+/* line 482, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio span {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: center;
+}
+
+/* line 489, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.radio input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  text-align: center;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: none;
+}
+
+/* Uploader */
+/* line 500, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+/* line 506, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader span.action {
+  float: left;
+  display: inline;
+  padding: 2px 0px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 514, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader span.filename {
+  padding: 0px 10px;
+  float: left;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: default;
+}
+
+/* line 524, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_uniform.scss */
+div.uploader input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  float: right;
+  height: 25px;
+  border: none;
+  cursor: default;
+}
+
+/* line 1, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+form {
+  margin: 0 0 18px;
+}
+
+/* line 4, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 9, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 27px;
+  font-size: 19.5px;
+  line-height: 36px;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 18, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+legend small {
+  font-size: 13.5px;
+}
+
+/* line 23, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+label {
+  margin-bottom: 5px;
+}
+
+/* line 27, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.checkbox {
+  min-height: 31px;
+  display: block;
+}
+/* line 30, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.checkbox input[type="radio"], .checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: -18px;
+}
+
+/* line 37, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.controls > .checkbox:first-child {
+  padding-top: 5px;
+}
+
+/* line 41, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.checkbox.inline {
+  display: inline-block;
+  padding-top: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* line 47, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.checkbox.inline + .checkbox.inline {
+  margin-left: 10px;
+}
+
+/* line 53, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.input-mini {
+  width: 60px;
+}
+
+/* line 54, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.input-small {
+  width: 90px;
+}
+
+/* line 55, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.input-medium {
+  width: 150px;
+}
+
+/* line 56, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.input-large {
+  width: 210px;
+}
+
+/* line 57, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.input-xlarge {
+  width: 270px;
+}
+
+/* line 58, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.input-xxlarge {
+  width: 530px;
+}
+
+/* line 62, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.row input[class*="span"],
+.row select[class*="span"],
+.row textarea[class*="span"] {
+  float: none;
+  margin-left: 0;
+}
+
+/* line 72, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.input-append input[class*="span"],
+.input-append .uneditable-input[class*="span"],
+.input-prepend input[class*="span"],
+.input-prepend .uneditable-input[class*="span"],
+.row-fluid .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"] {
+  display: inline-block;
+}
+
+/* line 84, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.help.block {
+  display: block;
+  margin-bottom: 9px;
+}
+
+/* line 89, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.help {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+/* line 98, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.control-group {
+  margin-bottom: 9px;
+}
+
+/* line 101, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+legend + .control-group {
+  margin-top: 18px;
+  -webkit-margin-top-collapse: separate;
+}
+
+/* line 108, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.form-horizontal .control-group {
+  margin-bottom: 18px;
+  *zoom: 1;
+}
+/* line 61, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.form-horizontal .control-group:before, .form-horizontal .control-group:after {
+  display: table;
+  content: "";
+}
+/* line 65, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.form-horizontal .control-group:after {
+  clear: both;
+}
+/* line 113, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.form-horizontal .control-label {
+  float: left;
+  width: 140px;
+  padding-top: 5px;
+  text-align: right;
+}
+/* line 120, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.form-horizontal .controls {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 160px;
+  *margin-left: 0;
+}
+/* line 127, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.form-horizontal .controls:first-child {
+  *padding-left: 160px;
+}
+/* line 132, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.form-horizontal .help.block {
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+/* line 137, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_forms.scss */
+.form-horizontal .form-actions {
+  padding-left: 160px;
+}
+
+/* line 5, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.warning > label,
+.control-group.warning .help {
+  color: #c09853;
+}
+/* line 13, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.warning .checkbox,
+.control-group.warning .radio,
+.control-group.warning input,
+.control-group.warning select,
+.control-group.warning textarea {
+  color: #c09853;
+  border-color: #c09853;
+}
+/* line 16, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.warning .checkbox:focus,
+.control-group.warning .radio:focus,
+.control-group.warning input:focus,
+.control-group.warning select:focus,
+.control-group.warning textarea:focus {
+  border-color: #a47e3c;
+  -moz-box-shadow: 0 0 6px #dbc59e;
+  -webkit-box-shadow: 0 0 6px #dbc59e;
+  -ms-box-shadow: 0 0 6px #dbc59e;
+  -o-box-shadow: 0 0 6px #dbc59e;
+  box-shadow: 0 0 6px #dbc59e;
+}
+
+/* line 5, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.error > label, .control-group.error .help {
+  color: #b94a48;
+}
+/* line 13, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea {
+  color: #b94a48;
+  border-color: #b94a48;
+}
+/* line 16, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.error .checkbox:focus, .control-group.error .radio:focus, .control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
+  border-color: #953b39;
+  -moz-box-shadow: 0 0 6px #d59392;
+  -webkit-box-shadow: 0 0 6px #d59392;
+  -ms-box-shadow: 0 0 6px #d59392;
+  -o-box-shadow: 0 0 6px #d59392;
+  box-shadow: 0 0 6px #d59392;
+}
+
+/* line 5, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.success > label, .control-group.success .help {
+  color: #468847;
+}
+/* line 13, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, .control-group.success textarea {
+  color: #468847;
+  border-color: #468847;
+}
+/* line 16, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_mixins.scss */
+.control-group.success .checkbox:focus, .control-group.success .radio:focus, .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
+  border-color: #356635;
+  -moz-box-shadow: 0 0 6px #7aba7b;
+  -webkit-box-shadow: 0 0 6px #7aba7b;
+  -ms-box-shadow: 0 0 6px #7aba7b;
+  -o-box-shadow: 0 0 6px #7aba7b;
+  box-shadow: 0 0 6px #7aba7b;
+}
+
+/* line 1, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+div.tagline {
+  border-bottom: 1px solid #99cc33;
+  font-style: italic;
+  font-size: 19px;
+  padding-bottom: 9px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+/* line 8, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+div.tagline p {
+  margin: 0;
+}
+
+/* line 12, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+fieldset, .well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  background: #f7f7f7;
+  color: gray;
+}
+/* line 20, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+fieldset.active, fieldset.green, .well.active, .well.green {
+  border: 1px solid #99cc33;
+  background: #eff7de;
+}
+
+/* line 30, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+
+/* line 39, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert-heading {
+  color: inherit;
+}
+
+/* line 44, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+/* line 54, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+
+/* line 60, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert-danger,
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+/* line 65, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+
+/* line 73, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* line 78, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+
+/* line 81, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_components.scss */
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+/* line 1, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainContainer {
+  font-size: 13px;
+}
+
+/** top menu */
+/* line 8, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainHeader *,
+#mainBanner *,
+#contentOuter * {
+  border: 1px solid #fff;
+}
+
+/* line 12, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainHeader #mainHeaderInner #topMenu {
+  float: left;
+}
+/* line 17, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainHeader #mainHeaderInner #topMenu ul li a {
+  color: white;
+  min-width: 50px;
+  padding: 0.8em 1.3em;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 24, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainHeader #mainHeaderInner #topMenu ul li a#logo {
+  padding: 0 !important;
+}
+/* line 28, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainHeader #mainHeaderInner #topMenu ul li a:link, #mainHeader #mainHeaderInner #topMenu ul li a:visited {
+  display: block;
+}
+
+/** banner */
+/* line 42, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainBanner {
+  padding: 2.5em 0;
+}
+/* line 46, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#mainBanner #mainBannerInner #banner .powered {
+  position: relative;
+  top: 5.6em;
+}
+
+/** content */
+/* line 56, //BD-SERVER/Projects/zahid/real-spice/assets/css/source/_layout.scss */
+#contentOuter {
+  padding: 2.5em 0;
+}
+
+/** footer */

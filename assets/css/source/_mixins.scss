@@ -1,0 +1,164 @@
+// Mixin for form field states
+@mixin formFieldState($textColor: #555, $borderColor: #ccc, $backgroundColor: #f5f5f5) {
+  // Set the text color
+  > label,
+  .help {
+    color: $textColor;
+  }
+  // Style inputs accordingly
+  .checkbox,
+  .radio,
+  input,
+  select,
+  textarea {
+    color: $textColor;
+    border-color: $borderColor;
+    &:focus {
+      border-color: darken($borderColor, 10%);
+      @include box-shadow(0 0 6px lighten($borderColor, 20%));
+    }
+  }
+}
+// IE7 inline-block
+// ----------------
+@mixin ie7-inline-block() {
+  *display: inline; // IE7 inline-block hack
+  *zoom: 1;
+}
+// IE7 likes to collapse whitespace on either side of the inline-block elements.
+// Ems because we're attempting to match the width of a space character. Left
+// version is for form buttons, which typically come after other elements, and
+// right version is for icons, which come before. Applying both is ok, but it will
+// mean that space between those elements will be .6em (~2 space characters) in IE7,
+// instead of the 1 space in other browsers.
+@mixin ie7-restore-left-whitespace() {
+  *margin-left: .3em;
+
+  &:first-child {
+    *margin-left: 0;
+  }
+}
+
+@mixin ie7-restore-right-whitespace() {
+  *margin-right: .3em;
+
+  &:last-child {
+    *margin-left: 0;
+  }
+}
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin behaviour(){
+  behavior: url("http://192.168.0.116/KHALED/verified/assets/js/PIE.htc");
+}
+@mixin content-columns($columnCount, $columnGap: $gridGutterWidth) {
+  @include exp-prop(column-count,$columnCount);
+  @include exp-prop(column-gap,$columnGap);
+}
+@mixin border-radius($arguments){
+  @include exp-prop(border-radius,$arguments);
+}
+@mixin box-shadow($arguments){
+  @include exp-prop(box-shadow,$arguments);
+}
+@mixin rad-grad($arguments){
+  @include exp-value(background,radial-gradient($arguments));
+}
+@mixin lin-grad($from, $to:darken($from,13.5%)){
+  background: $from;
+  @include exp-value(background,linear-gradient($from, $to));
+  -pie-background:linear-gradient($from, $to);
+}
+@mixin transition($props, $duration, $timing:default, $delay:0){
+  @include transition-property($props);
+  @include transition-duration($duration);
+  @include transition-timing-function($timing);
+  @include transition-delay($delay);
+}
+
+@mixin transform($props){
+  @include exp-prop(transform,$props);
+}
+@mixin transform-origin($props){
+  @include exp-prop(transform-origin,$props);
+}
+@mixin transition-property($arguments){
+  $_props-webkit:();
+  $_props-moz:();
+  $_props-ms:();
+  $_props-o:();
+  $_props:();
+  @each $prop in $arguments{
+    @if $prop == transform{
+      $_props-webkit:append($_props-webkit,-webkit-#{$prop},comma);
+      $_props-moz:append($_props-moz,-moz-#{$prop},comma);
+      $_props-ms:append($_props-ms,-ms-#{$prop},comma);
+      $_props-o:append($_props-o,-o-#{$prop},comma);
+      $_props:append($_props,$prop,comma);
+    }@else{
+      $_props-webkit:append($_props-webkit,$prop,comma);
+      $_props-moz:append($_props-moz,$prop,comma);
+      $_props-ms:append($_props-ms,$prop,comma);
+      $_props-o:append($_props-o,$prop,comma);
+      $_props:append($_props,$prop,comma);
+    }
+  }
+  -webkit-transition-property:$_props-webkit;
+  -moz-transition-property:$_props-moz;
+  -ms-transition-property:$_props-ms;
+  -o-transition-property:$_props-o;
+  transition-property:$_props;
+}
+@mixin transition-duration($arguments){
+  @include exp-prop(transition-duration,$arguments);
+}
+@mixin transition-timing-function($arguments){
+  @include exp-prop(transition-timing-function,$arguments);
+}
+@mixin transition-delay($arguments){
+  @include exp-prop(transition-delay,$arguments);
+}
+
+$_prefixes:(-moz,-webkit,-ms,-o);
+@mixin exp-prop($prop,$val){
+  @each $prefix in $_prefixes{
+    #{$prefix}-#{$prop}:$val;
+  }
+  #{$prop}:$val;
+}
+@mixin exp-value($prop,$val){
+  @each $prefix in $_prefixes{
+    #{$prop}:#{$prefix}-#{$val};
+  }
+  #{$prop}:#{$val};
+}
+
+@mixin colored-box($back-color,$border-width,$border-color,$border-style:solid,$border-radius:0 ){
+  background: $back-color;
+  border:{
+    width: $border-width;
+    color: $border-color;
+    style: $border-style;
+  }
+  @if $border-radius > 0{
+    @include border-radius($border-radius);
+  }
+}
